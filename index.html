@@ -142,6 +142,7 @@
         top: 60%;
         right: 10%;
         /* transform: translate(-50%,-50%); */
+        animation: VUE 1s ease-in 0s 1 normal forwards;
       }
       #vue-line{
         width: 20%;
@@ -149,6 +150,7 @@
         position: absolute;
         top: 60%;
         right: 22%;
+        animation: VUE-line 1s ease-in 0s 1 normal forwards;
         /* transition: 3s; */
       }
       .container p{
@@ -160,6 +162,28 @@
       /* hr{
         display: none;
       } */
+    }
+    @keyframes VUE {
+      from {
+        top: 50%;
+        right: 50%;
+        transform: translate(-50%,-50%);
+      }
+
+      to {
+        top: 60%;
+        right: 10%;
+      }
+    }
+
+    @keyframes VUE-line {
+      from {
+        width: 0%;
+      }
+
+      to {
+        width: 20%;
+      }
     }
   </style>
 </head>
